@@ -1,18 +1,13 @@
-# isatty
-
-
-## Usage
-
-```go
-package main
+package isatty_test
 
 import (
 	"fmt"
-	"github.com/gostores/isatty"
 	"os"
+
+	"github.com/gostores/isatty"
 )
 
-func main() {
+func Example() {
 	if isatty.IsTerminal(os.Stdout.Fd()) {
 		fmt.Println("Is Terminal")
 	} else if isatty.IsCygwinTerminal(os.Stdout.Fd()) {
@@ -21,18 +16,3 @@ func main() {
 		fmt.Println("Is Not Terminal")
 	}
 }
-```
-
-## Installation
-
-```
-$ go get github.com/gostores/isatty
-```
-
-## License
-
-MIT
-
-## Author
-
-Yasuhiro Matsumoto (a.k.a mattn)
