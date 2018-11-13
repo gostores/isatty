@@ -8,7 +8,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gostores/isatty"
+	"github.com/govenue/isatty"
 	"os"
 )
 
@@ -26,7 +26,7 @@ func main() {
 ## Installation
 
 ```
-$ go get github.com/gostores/isatty
+$ go get github.com/govenue/isatty
 ```
 
 ## License
